@@ -41,13 +41,14 @@
     }
    header {
         background-color: #004D40;
-  color: white;
+        color: white;
       
-      padding: 30px 0 10px;
-      text-align: center;
-      font-size: 2.8rem;
-      font-weight: 900;
-      box-shadow: 0 4px 10px rgba(0, 105, 92, 0.1);
+        padding: 30px 0 10px;
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 900;
+        box-shadow: 0 4px 10px rgba(0, 105, 92, 0.1);
+        box-sizing: border-box;
     }
     .search-bar {
       padding: 20px;
@@ -90,6 +91,7 @@
       top: 0;
       z-index: 1000;
       box-shadow: 0 4px 12px rgba(0, 105, 92, 0.1);
+      box-sizing: border-box;
     }
     nav a {
       color: #00695C;
@@ -216,18 +218,8 @@
       padding: 25px;
       font-size: 1rem;
     }
-    @media (max-width: 768px) {
-      .cards-container {
-        flex-direction: column;
-        align-items: center;
-      }
-      nav {
-        flex-direction: column;
-      }
-      nav a {
-        margin: 8px 0;
-      }
-    }
+    
+    
     .card img {
   width: 100%;
   height: auto;
@@ -345,12 +337,41 @@
   left: auto;
   right: 0;
 }
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: center;
     gap: 10px;
   }
+  
+ header, nav {
+      width: 100%;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      box-sizing: border-box;
+    }
+
+    
+  
+
+
+
+
+
+
 
   .hero {
     height: auto;
@@ -390,7 +411,7 @@
 
   .tour-card {
     flex: 0 0 auto;
-    width: 80%;
+    width: 40%;
     min-width: 250px;
   }
 
@@ -404,7 +425,7 @@
   }
 
   .gallery img {
-    width: 90%;
+    width: 50%;
     height: auto;
   }
 
@@ -416,4 +437,6 @@
     height: 250px;
   }
 }
+
+
 
