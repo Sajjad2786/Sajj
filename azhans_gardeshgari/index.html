@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>آژانس گردشگری پارس‌سفر</title>
+  <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>آژانس گردشگری پارس‌سفر</header>
+  
+  <nav>
+    <a href="#about">درباره ما</a>
+    <a href="#services">خدمات</a>
+    <a href="#tours">تورهای ویژه</a>
+    <a href="#gallery">گالری</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>سفر رو با ما شروع کن!</h1>
+      <p>بهترین تورهای داخلی و خارجی در انتظار شماست</p>
+      <div class="search-bar">
+        <input type="text" placeholder="نام شهر مقصد">
+        <select>
+          <option>انتخاب نوع تور</option>
+          <option>داخلی</option>
+          <option>خارجی</option>
+        </select>
+        <button onclick="alert('در حال جستجو...')">جستجو</button>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section id="about">
+      <h2>درباره ما</h2>
+      <p>آژانس گردشگری پارس‌سفر با بیش از ۱۰ سال تجربه در برگزاری تورهای داخلی و خارجی، همواره در تلاش برای خلق بهترین خاطرات سفر برای مشتریان خود است.</p>
+    </section>
+    <section id="services">
+      <h2>خدمات ما</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./photo/tour dakheli.jpg" alt="تورهای داخلی">
+          <h3>تورهای داخلی</h3>
+          <p>سفر به زیباترین مقاصد ایران با برنامه‌ریزی دقیق و اقامت باکیفیت.</p>
+          <div class="price">شروع قیمت: ۲٫۵۰۰٫۰۰۰ تومان</div>
+        </div>
+        <div class="card">
+          <img src="./photo/tour khareji.jpg" alt="تورهای خارجی">
+          <h3>تورهای خارجی</h3>
+          <p>گردش در شهرهای معروف جهان با راهنمای حرفه‌ای و خدمات کامل.</p>
+          <div class="price">شروع قیمت: ۹٫۸۰۰٫۰۰۰ تومان</div>
+        </div>
+        <div class="card">
+          <img src="./photo/booking.jpg" alt="رزرو هتل و پرواز">
+          <h3>رزرو هتل و پرواز</h3>
+          <p>رزرو سریع و مطمئن پرواز و هتل در هر نقطه از جهان.</p>
+          <div class="price">شروع قیمت: ۱٫۲۰۰٫۰۰۰ تومان</div>
+        </div>
+      </div>
+    </section>
+    <section id="special-tours">
+  <h2>تورهای ویژه</h2>
+  <div class="scroll-container-wrapper">
+    <button class="scroll-btn left" onclick="scrollTours(-1)">‹</button>
+    <div class="tours-grid" id="tour-scroll">
+      <div class="tour-card">
+        <img src="./photo/estanbol.jpg" alt="تور استانبول">
+        <div class="tour-info">
+          <h3>تور استانبول</h3>
+          <p>۴ شب و ۵ روز اقامت در هتل ۵ ستاره با پرواز مستقیم.</p>
+          <button>مشاهده جزئیات</button>
+        </div>
+      </div>
+      <div class="tour-card">
+        <img src="./photo/kish.jpg" alt="تور کیش">
+        <div class="tour-info">
+          <h3>تور کیش</h3>
+          <p>اقامت در هتل ساحلی و استفاده از تفریحات دریایی.</p>
+          <button>مشاهده جزئیات</button>
+        </div>
+      </div>
+      <div class="tour-card">
+        <img src="./photo/dobei.jpg" alt="تور دبی">
+        <div class="tour-info">
+          <h3>تور دبی</h3>
+          <p>۵ روز در دبی با ویزای فوری و گشت شهری رایگان.</p>
+          <button>مشاهده جزئیات</button>
+        </div>
+      </div>
+      <div class="tour-card">
+        <img src="./photo/dobei.jpg" alt="تور دبی">
+        <div class="tour-info">
+          <h3>تور دبی</h3>
+          <p>۵ روز در دبی با ویزای فوری و گشت شهری رایگان.</p>
+          <button>مشاهده جزئیات</button>
+        </div>
+      </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollTours(1)">›</button>
+  </div>
+</section>
+
+
+    <section id="gallery">
+      <h2>گالری تصاویر</h2>
+      <div class="gallery">
+        <img src="./photo/download.jpg" alt="ساحل زیبا">
+        <img src="./photo/download (1).jpg" alt="کوهستان زیبا">
+        <img src="./photo/download (2).jpg" alt="مسافرت هیجان‌انگیز">
+      </div>
+    </section>
+    <section id="contact">
+      <h2>تماس با ما</h2>
+      <form onsubmit="alert('پیام شما ارسال شد!'); return false;">
+        <input type="text" placeholder="نام شما" required>
+        <input type="email" placeholder="ایمیل شما" required>
+        <textarea rows="5" placeholder="پیام شما" required></textarea>
+        <button type="submit">ارسال</button>
+      </form>
+      <iframe
+        src="https://maps.google.com/maps?q=Tehran&z=13&output=embed"
+        title="موقعیت آژانس پارس‌سفر"
+        loading="lazy"
+        allowfullscreen
+      ></iframe>
+    </section>
+  </main>
+  <footer>
+    © 2025 آژانس گردشگری پارس‌سفر - تمامی حقوق محفوظ است
+  </footer>
+  <script>
+  function scrollTours(direction) {
+    const container = document.getElementById('tour-scroll');
+    const scrollAmount = 300; // هر بار چه مقدار اسکرول بشه
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+</body>
+</html>
