@@ -97,7 +97,7 @@
       color: #00695C;
       margin: 0 20px;
       font-weight: 700;
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding: 8px 14px;
       border-radius: 10px;
       transition: background 0.3s ease, color 0.3s ease;
@@ -349,6 +349,7 @@ main {
 
 
 
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -364,7 +365,8 @@ main {
       box-sizing: border-box;
     }
 
-    
+   
+
   
 
 
