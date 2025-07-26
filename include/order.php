@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p class="error">خطا: <?php echo $error_msg ?? 'خطای ناشناخته'; ?></p>
     <?php endif; ?>
 
-    <a href="SajjadEtehadi.php" class="back-btn">بازگشت به فروشگاه</a>
+    <a href="index1.php" class="back-btn">بازگشت به فروشگاه</a>
 </div>
 
 </body>

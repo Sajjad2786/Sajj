@@ -15,7 +15,7 @@
             <input type="password" placeholder="رمز عبور" id="password" name="password" required>
             <button type="submit">تأیید</button>
         </form>
-        <a href="SajjadEtehadi.php">انصراف</a>
+        <a href="index1.php">انصراف</a>
     </div>
 </body>
 </html>

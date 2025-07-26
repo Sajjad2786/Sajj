@@ -74,7 +74,7 @@ $result = mysqli_query($link, $query);
             </tr>
             
         <?php endwhile; ?>
-        <tr><a href="SajjadEtehadi.php">بازگشت به صفحه اصلی فروشگاه</a></tr>
+        <tr><a href="index1.php">بازگشت به صفحه اصلی فروشگاه</a></tr>
     </table>
 <?php else: ?>
     <p>هنوز هیچ سفارشی ثبت نشده است.</p>

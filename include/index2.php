@@ -60,7 +60,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['meli
             <div class='profile'>
             </div>
         </div>
-        <a href='SajjadEtehadi.php' style='color: yellow; background-color: red; text-decoration: none;'>ورود به صفحه اصلی فروشگاه</a>
+        <a href='index1.php' style='color: yellow; background-color: red; text-decoration: none;'>ورود به صفحه اصلی فروشگاه</a>
         ";
 
     } else {
@@ -73,12 +73,12 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['meli
     ?>
         <script type="text/javascript">
             <!--
-                location.replace("SajjadEtehadi.php");
+                location.replace("index1.php");
             --!>
         </script>
         <script type="text/javascript">
             <!--
-                location.replace("SajjadEtehadi.php");
+                location.replace("index1.php");
             --!>
         </script>
         <?php

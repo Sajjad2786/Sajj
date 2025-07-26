@@ -47,7 +47,7 @@
             echo ("<p style='color:green;'><b>" . $realname . 
             "گرامی عضویت شما با نام کاربری" . $username . 
             "درفروشگاه با موفقیت انجام شد." . "</b></p>");
-            echo ("<a href='SajjadEtehadi.php' style='color: yellow; background-color: red; text-decoration: none;'>ورود به صفحه اصلی فروشگاه</a>
+            echo ("<a href='index1.php' style='color: yellow; background-color: red; text-decoration: none;'>ورود به صفحه اصلی فروشگاه</a>
             ");
             
         }

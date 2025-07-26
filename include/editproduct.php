@@ -28,7 +28,7 @@
         </div>
     </header>
     <nav>
-        <a href="SajjadEtehadi.php">صفحه اصلی</a>
+        <a href="index1.php">صفحه اصلی</a>
         <a href="conup.php">ویرایش اطلاعات</a>
         <?php
                     if (isset($_SESSION["state_login"])&& $_SESSION["state_login"] === true) {
@@ -119,7 +119,7 @@ while ($row = mysqli_fetch_assoc($res)) {
         </form>
     </div>
 <?php } ?>
-<a href="SajjadEtehadi.php">بازگشت به فروشگاه</a>
+<a href="index1.php">بازگشت به فروشگاه</a>
 
 
     </main>

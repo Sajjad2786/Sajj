@@ -89,7 +89,7 @@
             <input type="password" placeholder="تأیید رمز عبور" name="repassword"  required>
             <button type="submit" href="login.php"> ذخیره</button>
         </form>
-        <a href="SajjadEtehadi.php">انصراف! رفتن به صفحه اصلی</a>
+        <a href="index1.php">انصراف! رفتن به صفحه اصلی</a>
     </div>
 
 
