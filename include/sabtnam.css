@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        }
+
+.register-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+        }
+
+.register-container h2 {
+    margin-bottom: 20px;
+        }
+
+.register-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+        }
+
+.register-container button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: bold;
+        }
+
+        .register-container button:hover{
+            background-color: aqua;
+        }
+
+.register-container a {
+    display: block;
+    margin-top: 10px;
+    color: #ff0000;
+    text-decoration: none;
+        }
