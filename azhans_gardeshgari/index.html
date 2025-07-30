@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
+  <link rel="icon" href="./photo/logo_tap.png" type="image/x-icon" />
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>آژانس گردشگری پارس‌سفر</title>
   <link href="css.css" rel="stylesheet" type="text/css">
+
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@latest/dist/font-face.css" rel="stylesheet" type="text/css" />
+
   <title>آژانس گردشگری تاپ‌سفر</title>
 <meta name="description" content="آژانس گردشگری تاپ‌سفر، مجری تورهای داخلی و خارجی با بهترین خدمات.">
 <meta name="keywords" content="تور, گردشگری, سفر, آژانس, بلیط, رزرو هتل">
 <meta name="author" content="تاپ‌سفر">
 
+
+
 </head>
 <body dir="rtl">
-  <header>آژانس گردشگری پارس‌سفر</header>
-  
-  <nav>
-  <div class="nav-container">
-    
-    <div class="menu-links" id="menuLinks">
-      <a href="#about">درباره ما</a>
-      <a href="#services">خدمات</a>
-      <a href="#tours">تورهای ویژه</a>
-      <a href="#gallery">گالری</a>
-      <a href="#contact">تماس با ما</a>
+<header>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div class="logo-title">
+    <div class="top-line">
+      <img src="./photo/logo_tap.png" alt="لوگو" class="site-logo" />
+      <div class="site-title">پارس‌سفر</div>
     </div>
+    <div class="site-tagline">با ما جهان رو کشف کن!</div>
   </div>
-</nav>
+
+  
+<div class="header-actions">
+  <a href="tel:02112345678" title="تماس">
+    <img src="./photo/phone.svg" alt="تلفن" class="header-icon">
+  </a>
+  <a href="#search" title="جستجو">
+    <img src="./photo/search.svg" alt="جستجو" class="header-icon">
+  </a>
+</div>
+
+
+</header>
+
+
+<!-- پنل کناری -->
+<div id="sideMenu" class="side-menu">
+  <a href="#about">درباره ما</a>
+  <a href="#services">خدمات</a>
+  <a href="#special-tours">تورهای ویژه</a>
+  <a href="#gallery">گالری</a>
+  <a href="#contact">تماس با ما</a>
+
+</div>
+
+
+
 
   <section class="hero">
     <div class="hero-overlay">
@@ -80,7 +110,7 @@
         <div class="tour-info">
           <h3>تور استانبول</h3>
           <p>۴ شب و ۵ روز اقامت در هتل ۵ ستاره با پرواز مستقیم.</p>
-          <button>مشاهده جزئیات</button>
+          <button onclick="window.location.href='tour-details.html?tour=istanbul'">مشاهده جزئیات</button>
         </div>
       </div>
       <div class="tour-card">
@@ -88,7 +118,7 @@
         <div class="tour-info">
           <h3>تور کیش</h3>
           <p>اقامت در هتل ساحلی و استفاده از تفریحات دریایی.</p>
-          <button>مشاهده جزئیات</button>
+          <button onclick="window.location.href='tour-details.html?tour=kish'">مشاهده جزئیات</button>
         </div>
       </div>
       <div class="tour-card">
@@ -96,7 +126,7 @@
         <div class="tour-info">
           <h3>تور دبی</h3>
           <p>۵ روز در دبی با ویزای فوری و گشت شهری رایگان.</p>
-          <button>مشاهده جزئیات</button>
+          <button onclick="window.location.href='tour-details.html?tour=dubai'">مشاهده جزئیات</button>
         </div>
       </div>
       <div class="tour-card">
@@ -104,7 +134,8 @@
         <div class="tour-info">
           <h3>تور دبی</h3>
           <p>۵ روز در دبی با ویزای فوری و گشت شهری رایگان.</p>
-          <button>مشاهده جزئیات</button>
+         <button onclick="window.location.href='tour-details.html?tour=dubai'">مشاهده جزئیات</button>
+          <button onclick="window.location.href='tour-details.html?tour=dubai'">مشاهده جزئیات</button>
         </div>
       </div>
     </div>
@@ -141,14 +172,19 @@
     © 2025 آژانس گردشگری پارس‌سفر - تمامی حقوق محفوظ است
   </footer>
   <script>
-  function scrollTours(direction) {
-    const container = document.getElementById('tour-scroll');
-    const scrollAmount = 300; // هر بار چه مقدار اسکرول بشه
-    container.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
-    });
-  }
+  // function scrollTours(direction) {
+  //   const container = document.getElementById('tour-scroll');
+  //   const scrollAmount = 300; // هر بار چه مقدار اسکرول بشه
+  //   container.scrollBy({
+  //     left: direction * scrollAmount,
+  //     behavior: 'smooth'
+  //   });
+  // }
+ function toggleMenu() {
+  document.getElementById('sideMenu').classList.toggle('open');
+}
+
+
 </script>
 
 </body>

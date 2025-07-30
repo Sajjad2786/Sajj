@@ -15,14 +15,55 @@
       display: flex;
       flex-direction: column;
     }
-    .hero {
+    header {
+  animation: fadeInDown 0.6s ease-in-out;
+}
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    body {
+  font-family: 'Vazir', sans-serif;
+}
+/* وقتی منو باز است، هدر فضای بیشتری سمت راست می‌گیرد */
+body.menu-open header {
+  padding-right: 260px; /* به اندازه عرض منو + فاصله */
+}
+body.menu-open main {
+  margin-right: 240px;
+  transition: margin-right 0.3s ease;
+}
+
+    .hero {
       background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
       height: 40vh;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 70px;
     }
     .hero-overlay {
       background-color: rgba(0, 105, 92, 0.4);
@@ -39,17 +80,111 @@
       font-size: 1.3rem;
       margin-bottom: 25px;
     }
-   header {
-        background-color: #004D40;
-        color: white;
-      
-        padding: 30px 0 10px;
-        text-align: center;
-        font-size: 2.8rem;
-        font-weight: 900;
-        box-shadow: 0 4px 10px rgba(0, 105, 92, 0.1);
-        box-sizing: border-box;
-    }
+    header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  background-color: #004D40;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* فاصله بین آیتم‌ها */
+  padding: 0 20px;
+  z-index: 1100;
+  box-shadow: 0 8px 16px rgba(0, 105, 92, 0.2);
+  background: linear-gradient(to left, #004d40, #00796b);
+
+
+}
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.top-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.site-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap;
+}
+
+.site-tagline {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #a5d6a7;
+  margin-top: 4px;
+}
+
+
+
+
+
+.hamburger {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+  user-select: none;
+  z-index: 1200;
+}
+
+.top-bar {
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+
+
+.site-tagline {
+  font-size: 0.85rem;
+  color: #a5d6a7;
+  margin-top: 4px;
+}
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(100%); /* سفیدش می‌کنه، قابل حذف */
+  cursor: pointer;
+}
+
+
+/* دکمه همبرگر */
+
+
+
+.hamburger:hover {
+  color: #80cbc4;
+}
+
+
     .search-bar {
       padding: 20px;
       background: #FFFFFF;
@@ -458,7 +593,56 @@ main {
   iframe {
     height: 250px;
   }
+  header {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.site-title {
+  font-size: 1.4rem;
+}
+
 }
 
 
 
+
+
+
+/* منوی کناری */
+.side-menu {
+  position: fixed;
+  top: 70px; /* یعنی زیر هدر */
+  right: -240px;
+  width: 240px;
+  height: calc(100vh - 70px); /* ارتفاع صفحه منهای ارتفاع هدر */
+  background-color: #004D40;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+
+.side-menu.open {
+  right: 0;
+}
+
+
+
+
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+.side-menu a:hover {
+  background: linear-gradient(to left, #43aece, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
