@@ -9,7 +9,28 @@
       max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
+  padding-top: 100px; /* به اندازه ارتفاع هدر */
+
+
     }
+    header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70px;
+  background-color: #004D40;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* فاصله بین آیتم‌ها */
+  padding: 0 20px;
+  z-index: 1100;
+  box-shadow: 0 8px 16px rgba(0, 105, 92, 0.2);
+  background: linear-gradient(to left, #004d40, #00796b);
+
+
+}
     img {
       width: 100%;
       max-width: 600px;
@@ -30,10 +51,60 @@
       font-weight: bold;
       font-size: 1.1rem;
     }
+    header {
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
   </style>
 </head>
 <body>
-  <header>آژانس گردشگری پارس‌سفر</header>
+  <header>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+  <div class="logo-title">
+    <div class="top-line">
+      <img src="./photo/logo_tap.png" alt="لوگو" class="site-logo" />
+      <div class="site-title">پارس‌سفر</div>
+    </div>
+ 
+  </div>
+
+  
+<div class="header-actions">
+  <a href="tel:02112345678" title="تماس">
+    <img src="./photo/phone.svg" alt="تلفن" class="header-icon">
+  </a>
+  <a href="#search" title="جستجو">
+    <img src="./photo/search.svg" alt="جستجو" class="header-icon">
+  </a>
+</div>
+
+
+</header>
   <main>
     <h1 id="tour-title">در حال بارگذاری...</h1>
     <img id="tour-image" src="" alt="تصویر تور" />

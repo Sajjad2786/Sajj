@@ -593,10 +593,7 @@ main {
   iframe {
     height: 250px;
   }
-  header {
-  flex-direction: row;
-  justify-content: space-between;
-}
+ 
 
 .site-title {
   font-size: 1.4rem;
